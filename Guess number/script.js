@@ -60,6 +60,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.message').textContent = 'Start guessing..';
   document.querySelector('.score').textContent = /*score*/ '20';
+  document.querySelector('.highscore').textContent =/*highscore*/ '0';
   document.querySelector('body').style.backgroundColor = '#00204a';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.number').style.color = '#00204a';
