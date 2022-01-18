@@ -4,7 +4,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 
-document.querySelector('.check').addEventListener('click', function () {
+const enterNumber = function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
 
@@ -51,7 +51,9 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
-});
+};
+      
+document.querySelector('.check').addEventListener('click', enterNumber);
 
 document.querySelector('.again').addEventListener('click', function () {
   /*score = 20;*/
@@ -64,4 +66,12 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#00204a';
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.number').style.color = '#00204a';
+});
+
+document.querySelector('.guess').addEventListener('keydown', function (event) {
+  console.log(event.key);
+
+  if (event.key === 'Enter') {
+    enterNumber();
+  }
 });
