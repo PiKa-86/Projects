@@ -1,0 +1,86 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*background-color: rgb(132, 218, 252);*/
+  background-image: url(../overlapping/livewave.svg);
+  background-size: 100%;
+  background-position: center center;
+}
+
+.container {
+  background: #dff7f1;
+  /*background-image: linear-gradient(to bottom, #dff7f1, #f7d7f4);*/
+  background-image: url(../overlapping/waves.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 940px;
+  margin: auto;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  color: #fff;
+}
+
+.main-area {
+  padding: 15px 25px;
+  width: 64%;
+  margin-top: 95px;
+  margin-left: 150px;
+}
+
+.image-banner {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-banner img {
+  display: block;
+}
+
+.banner-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 25px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-area {
+  background-image: url(../overlapping/line.jpg);
+  background-repeat: repeat-x;
+}
+.copy-right {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
